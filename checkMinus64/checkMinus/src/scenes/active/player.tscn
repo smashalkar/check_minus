@@ -1,0 +1,27 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/scenes/active/combat/stats/TestStats.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/scenes/active/player.gd" type="Script" id=2]
+[ext_resource path="res://src/scenes/active/inventory/TestInventory.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/scenes/active/combat/moveset/TestAttacks.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/scenes/active/TestScreen.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/resources/species/TestPlayerStats.tres" type="Resource" id=6]
+
+[node name="Player" type="Node2D"]
+z_index = 5
+script = ExtResource( 2 )
+statbase = ExtResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="."]
+centered = false
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Stats" parent="." instance=ExtResource( 1 )]
+
+[node name="Attacks" parent="." instance=ExtResource( 4 )]
+
+[node name="Inventory" parent="." instance=ExtResource( 3 )]
+
+[node name="UI" parent="." instance=ExtResource( 5 )]
+visible = false

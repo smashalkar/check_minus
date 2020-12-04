@@ -1,0 +1,19 @@
+[gd_scene format=2]
+
+[node name="UI" type="Node2D"]
+z_index = 35
+z_as_relative = false
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="TextEdit" type="RichTextLabel" parent="."]
+margin_left = -496.0
+margin_top = 204.0
+margin_right = -153.0
+margin_bottom = 276.0
+bbcode_text = "PLACEHOLDER TEXT -  JUST SEND IT TO THE FRONT AND MAKE IT BIGGER! ALSO, ADJUST THE SCREEN SIZE THING SO THAT IT'S POSITIONED RIGHT IN A WINDOW AND IN FULL SCREEN"
+text = "PLACEHOLDER TEXT -  JUST SEND IT TO THE FRONT AND MAKE IT BIGGER! ALSO, ADJUST THE SCREEN SIZE THING SO THAT IT'S POSITIONED RIGHT IN A WINDOW AND IN FULL SCREEN"
+__meta__ = {
+"_edit_use_anchors_": false
+}

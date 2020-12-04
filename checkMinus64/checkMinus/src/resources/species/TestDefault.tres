@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://src/resources/species/SpeciesStats.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+id = "Slime"
+info = "It's sticky!"
+sprite = "res://Sprites/enemy.png"
+health = 20
+mana = 10
+offense = 5
+defense = 5
+speed = 5
+baseAttk = "res://TestSlash.tres"

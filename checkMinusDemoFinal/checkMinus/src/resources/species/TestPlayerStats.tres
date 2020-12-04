@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://src/resources/species/SpeciesStats.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+id = "Main Guy"
+info = "The Chosen One"
+sprite = "res://Sprites/player.png"
+health = 20
+mana = 10
+offense = 8
+defense = 8
+speed = 10
+baseAttk = "res://TestSlash.tres"
